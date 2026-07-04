@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Tính Ma</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>TÍNH MA</h1>
+
+<img src="images/cover.jpg" style="max-width:200px;display:block;margin:auto;">
+
+<h2>Danh sách 31 chương</h2>
+
+<ul id="list"></ul>
+
+<script>
+let html = "";
+for (let i = 1; i <= 31; i++) {
+    html += `<li><a href="chapters/chapter${i}.html">Chương ${i}</a></li>`;
+}
+document.getElementById("list").innerHTML = html;
+</script>
+
+</body>
+</html>
